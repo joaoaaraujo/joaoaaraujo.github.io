@@ -1,0 +1,124 @@
+@keyframes floating {
+  from {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px 0px rgb(0 0 0 / 60%);
+  }
+  to {
+    transform: translateY(-20px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+body {
+  padding-top: 5vh;
+}
+.fotodeperfil {
+  object-fit: cover;
+  object-position: 50% 32%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 0.4rem solid #1c0b2b;
+  box-shadow: 0 5px 15px 0px rgb(0 0 0 / 60%);
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.apresentacao {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  max-width: 450px;
+  margin: 0 auto;
+}
+#certificados-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.certificados {
+  width: 100%;
+  height: auto;
+}
+
+.zoom {
+  overflow: hidden;
+  width: 20%;
+}
+.zoom img {
+  max-width: 100%;
+  -moz-transition: 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.zoom img:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.botao {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+.botao a {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  background-color: #4caf50;
+  border-radius: 1.3rem;
+  border: 0;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.botao img {
+  filter: invert(1);
+  margin-right: 0.5rem;
+}
+.ilustracao {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contatos {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.idiomas {
+  width: 70px;
+  height: 70px;
+}
+.container {
+  text-align: center;
+}
+@media (max-width: 992px) {
+  img.fotodeperfil {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .zoom {
+    width: 100%;
+  }
+}
