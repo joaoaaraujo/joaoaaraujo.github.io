@@ -1,0 +1,79 @@
+body {
+  height: 100vh;
+  /* background-image: url(../imagens/Bg-comp-01.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #2b306c;
+  background-color: #eee;
+  font-family: "Raleway", sans-serif;
+}
+
+h2,
+h3 {
+  margin: 0 0 1rem;
+}
+
+p {
+  margin: 0;
+}
+
+.lead {
+  margin-right: 1rem;
+  font-size: 3rem;
+}
+
+.container {
+  width: 800px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+.container .box {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 2rem;
+}
+
+.container .box .resume,
+.container .box .price,
+.container .box .text {
+  padding: 2rem;
+}
+
+.container .box .resume {
+  grid-column: span 2;
+  background-color: white;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.container .box .price {
+  background-color: #2bb3b1;
+  border-bottom-left-radius: 2rem;
+}
+
+.container .box .text {
+  background-color: #4abebd;
+  border-bottom-right-radius: 2rem;
+}
+
+.container .box .price p:first-of-type {
+  display: flex;
+  align-items: center;
+}
+.container .box .price p {
+  margin-bottom: 1rem;
+}
+
+.container .box .price button {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: 0;
+  border-radius: 0.25rem;
+  background-color: #bfdf32;
+  font-weight: 600;
+  padding: 1rem 0;
+  width: 100%;
+}
